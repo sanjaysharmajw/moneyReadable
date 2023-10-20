@@ -8,7 +8,7 @@ Money converter
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  money_readable: ^1.1.6
+  money_readable: ^1.1.10
 ```
 2. Import the package and use it in your Flutter App.
 ```dart
@@ -18,7 +18,7 @@ import 'package:money_readable/money_readable.dart';
 
 
 <td>
-<img  src="https://raw.githubusercontent.com/sanjaysharmajw/moneyReadable/main/Images/Screenshot_1697802196.png"  alt="">
+<img  src="https://github.com/sanjaysharmajw/moneyReadable/blob/main/Images/Screenshot_1697802196.png?raw=true"  alt="">
 </td>
 
 

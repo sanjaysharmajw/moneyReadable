@@ -1,6 +1,6 @@
 name: money_readable
-description: Money Readable.
-version: 1.1.6
+description: How to get a number converted into something like this 12K, 1.5M, 4.2B from a normal number like 134900
+version: 1.1.10
 homepage: https://github.com/sanjaysharmajw/moneyReadable.git
 
 environment:

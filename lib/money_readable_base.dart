@@ -1,5 +1,3 @@
-
-
 import 'dart:math';
 
 /// Function that converts large numbers to humanized form \
@@ -22,53 +20,53 @@ String moneyReadableInt(int n) {
   if (n < 10000) {
     final s = (n / 1000).toStringAsFixed(1);
     if (s[s.length - 1] == '0') {
-      return s.substring(0, s.length - 2) + "K";
+      return "${s.substring(0, s.length - 2)}K";
     }
-    return s + "K";
+    return "${s}K";
   }
   if (n < 1000000) {
-    return (n / 1000).toStringAsFixed(0) + "K";
+    return "${(n / 1000).toStringAsFixed(0)}K";
   }
 
   // 1,000,000s
   if (n < 10000000) {
     final s = (n / pow(1000, 2)).toStringAsFixed(1);
     if (s[s.length - 1] == '0') {
-      return s.substring(0, s.length - 2) + "M";
+      return "${s.substring(0, s.length - 2)}M";
     }
-    return s + "M";
+    return "${s}M";
   }
   if (n < 1000000000) {
-    return (n / pow(1000, 2)).toStringAsFixed(0) + "M";
+    return "${(n / pow(1000, 2)).toStringAsFixed(0)}M";
   }
 
   // 1,000,000,000s
   if (n < 10000000000) {
     final s = (n / pow(1000, 3)).toStringAsFixed(1);
     if (s[s.length - 1] == '0') {
-      return s.substring(0, s.length - 2) + "B";
+      return "${s.substring(0, s.length - 2)}B";
     }
-    return s + "B";
+    return "${s}B";
   }
   if (n < 1000000000000) {
-    return (n / pow(1000, 3)).toStringAsFixed(0) + "B";
+    return "${(n / pow(1000, 3)).toStringAsFixed(0)}B";
   }
 
   // 1,000,000,000,000s
   if (n < 10000000000000) {
     final s = (n / pow(1000, 4)).toStringAsFixed(1);
     if (s[s.length - 1] == '0') {
-      return s.substring(0, s.length - 2) + "T";
+      return "${s.substring(0, s.length - 2)}T";
     }
-    return s + "T";
+    return "${s}T";
   }
   if (n < 1000000000000000) {
-    return (n / pow(1000, 4)).toStringAsFixed(0) + "T";
+    return "${(n / pow(1000, 4)).toStringAsFixed(0)}T";
   }
 
   // >= 1,000,000,000,000,000s
 
-  return (n / pow(1000, 5)).toStringAsFixed(0) + "Q";
+  return "${(n / pow(1000, 5)).toStringAsFixed(0)}Q";
 }
 
 /// Function that converts large numbers to humanized form \
@@ -91,39 +89,39 @@ String moneyReadableIntInd(int n) {
   if (n < 10000) {
     final s = (n / 1000).toStringAsFixed(1);
     if (s[s.length - 1] == '0') {
-      return s.substring(0, s.length - 2) + "K";
+      return "${s.substring(0, s.length - 2)}K";
     }
-    return s + "K";
+    return "${s}K";
   }
   if (n < 100000) {
-    return (n / 1000).toStringAsFixed(0) + "K";
+    return "${(n / 1000).toStringAsFixed(0)}K";
   }
 
   // 1,00,000s
   if (n < 1000000) {
     final s = (n / 100000).toStringAsFixed(1);
     if (s[s.length - 1] == '0') {
-      return s.substring(0, s.length - 2) + "L";
+      return "${s.substring(0, s.length - 2)}L";
     }
-    return s + "L";
+    return "${s}L";
   }
   if (n < 10000000) {
-    return (n / 100000).toStringAsFixed(0) + "L";
+    return "${(n / 100000).toStringAsFixed(0)}L";
   }
 
   // 1,00,00,000s
   if (n < 100000000) {
     final s = (n / 10000000).toStringAsFixed(1);
     if (s[s.length - 1] == '0') {
-      return s.substring(0, s.length - 2) + "Cr";
+      return "${s.substring(0, s.length - 2)}Cr";
     }
-    return s + "Cr";
+    return "${s}Cr";
   }
   if (n < 1000000000) {
-    return (n / 10000000).toStringAsFixed(0) + "Cr";
+    return "${(n / 10000000).toStringAsFixed(0)}Cr";
   }
 
   // >= 100,00,00,000s
 
-  return (n / 10000000).toStringAsFixed(0) + "Cr";
+  return "${(n / 10000000).toStringAsFixed(0)}Cr";
 }
