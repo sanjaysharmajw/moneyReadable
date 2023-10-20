@@ -1,5 +1,5 @@
 
-# Fancy Containers
+# Money Readable
 
 Money converter
 
@@ -8,14 +8,24 @@ Money converter
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  money_readable: ^1.1.1
+  money_readable: ^1.1.5
 ```
 2. Import the package and use it in your Flutter App.
 ```dart
 import 'package:money_readable/money_readable.dart';
 ```
 
+
+
+<td>
+<img  src="https://github.com/sanjaysharmajw/moneyReadable/blob/main/Screenshot_1697802196.png"  alt="">
+</td>
+
+
 <table>
+
+
+
 <tr>
 <td>
 

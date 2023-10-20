@@ -1,6 +1,6 @@
 name: money_readable
 description: Money Readable.
-version: 1.1.1
+version: 1.1.5
 homepage: https://github.com/sanjaysharmajw/moneyReadable.git
 
 environment:
