@@ -1,6 +1,6 @@
 name: money_readable
 description: How to get a number converted into something like this 12K, 1.5M, 4.2B from a normal number like 134900
-version: 1.1.10
+version: 1.1.14
 homepage: https://github.com/sanjaysharmajw/moneyReadable.git
 
 environment:
@@ -10,6 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  fluttertoast: ^8.1.1
+  flutter_easyloading: ^3.0.5
+  connectivity_plus: ^2.3.5
 
 dev_dependencies:
   flutter_test:
